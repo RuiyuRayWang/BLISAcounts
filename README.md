@@ -28,12 +28,16 @@ $ conda env create -f workflow/env/BLISAcounts.yml
 $ conda activate BLISAcounts
 ```
 
-Two toy examples are provided to demonstrate the usage of BLISAcounts.
-
-Setup project structure, in particular the input data (i.e. `AR005_example.fastq.gz`), as indicated below.
+Setup project structure, in particular the input data, as indicated below.
 
 In `config/config.yaml`, set sample metadata under `samples`, and antibody(ab)/well 
 ground truth metadta under `plate: well_settings`, `plate: ab_settings` in the config file.
+
+
+Two toy examples are provided to demonstrate the usage of BLISAcounts.
+
+Download example data from the following link:
+https://www.dropbox.com/scl/fo/pjsn5v20vqhsnw4m3pig1/h?rlkey=z51en6cp5w3ibwfzihpjkjtwk&dl=1
 
 ### Example 1: Standard sequences
 
