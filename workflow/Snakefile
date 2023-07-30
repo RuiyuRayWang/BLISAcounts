@@ -1,0 +1,9 @@
+configfile: "config/config.yaml"
+
+include: "rules/common.smk"
+include: "rules/umi_tools.smk"
+include: "rules/pipeline.smk"
+
+rule all:
+    input:
+        get_final_outputs()

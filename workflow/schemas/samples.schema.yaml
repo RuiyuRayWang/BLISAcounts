@@ -1,0 +1,28 @@
+$schema: "http://json-schema.org/draft-06/schema#"
+
+description: an entry in the sample sheet
+properties:
+  user:
+    type: string
+    description: name of the experimenter
+  project:
+    type: string
+    description: project name
+  library:
+    type: string
+    description: sequencing library
+  read:
+    type: string
+    description: name of fastq read file, typically the desired input file
+  sample:
+    type: string
+    description: name of sample
+  details:
+    type: string
+    description: a sentence describing the plate/sample
+
+required:
+  - user
+  - project
+  - library
+  - read

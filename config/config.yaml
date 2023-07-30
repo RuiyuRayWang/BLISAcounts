@@ -1,0 +1,11 @@
+# Whether to activate staggered sequence mode for barcode processing
+# If staggered, use extract_staggered_seq.py, otherwise umi_tools
+staggered: False
+
+# Path to sample sheet.
+samples: config/example.tsv
+
+plate:
+  num_wells: 96
+  well_settings: workflow/data/Zhong/HBV_example/AR005/metadata/well_bc_ground_truth.csv
+  ab_settings: workflow/data/Zhong/HBV_example/AR005/metadata/ab_bc_ground_truth.csv
