@@ -1,5 +1,6 @@
 .snakemake/*
 *.fastq.gz
+!workflow/data/
 workflow/data/*
 workflow/.snakemake
 
