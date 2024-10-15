@@ -67,14 +67,6 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
 docs/_build/
 
 # PyBuilder
@@ -133,3 +125,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+config/config_staggered_240228.yaml
+config/example_staggered_240228.tsv
+workflow/envs/BLISAcounts.yml
