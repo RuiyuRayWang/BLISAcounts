@@ -19,6 +19,12 @@ You may then use any data wrangling method of your choice to visualize the resul
 
 ## Usage
 
+Install the following prerequisites:
+```
+- conda
+- mamba
+```
+
 Install environment dependencies:
 ```
 $ mamba env create -n BLISAcounts -f workflow/env/curated.yml
