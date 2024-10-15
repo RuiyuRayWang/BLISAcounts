@@ -21,7 +21,7 @@ You may then use any data wrangling method of your choice to visualize the resul
 
 Install environment dependencies:
 ```
-$ conda env create -f workflow/env/BLISAcounts.yml
+$ mamba env create -n BLISAcounts -f workflow/env/curated.yml
 ```
 
 ```
@@ -30,13 +30,13 @@ $ conda activate BLISAcounts
 
 Setup project structure, in particular the input data, as indicated below.
 
-In `config/config.yaml`, set sample metadata under `samples`, and antibody(ab)/well 
-ground truth metadta under `plate: well_settings`, `plate: ab_settings` in the config file.
+In `config/config.yaml`, specify `sample` slot with sample metadata (e.g. `config/example.tsv`), 
+and `plate` slot with antibody (e.g. `workflow/data/Zhong/HBV_example/AR005/metadata/ab_bc_ground_truth.csv`) and well (e.g. `workflow/data/Zhong/HBV_example/AR005/metadata/well_bc_ground_truth.csv`) ground truth metadta.
 
 
-Two toy examples are provided to demonstrate the usage of BLISAcounts.
+To give a concrete example, two toy data are provided to demonstrate the usage of BLISAcounts.
 
-Download example data from the following link:
+Please download the example data from the following link and put them under the BLISAcounts directory:
 https://www.dropbox.com/scl/fo/pjsn5v20vqhsnw4m3pig1/h?rlkey=z51en6cp5w3ibwfzihpjkjtwk&dl=1
 
 ### Example 1: Standard sequences
