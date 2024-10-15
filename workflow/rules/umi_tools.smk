@@ -1,6 +1,6 @@
 rule umi_tools_whitelist:
     input:
-        "workflow/data/{user}/{project}/{library}/fastqs/{sample}.fastq.gz"
+        "workflow/data/{user}/{project}/{library}/fastqs/{sample}.fq.gz"
     output:
         "workflow/data/{user}/{project}/{library}/outs/{sample}_whitelist.txt"
     log:
@@ -19,7 +19,7 @@ rule umi_tools_whitelist:
 
 rule umi_tools_extract:
     input:
-        fq="workflow/data/{user}/{project}/{library}/fastqs/{sample}.fastq.gz",
+        fq="workflow/data/{user}/{project}/{library}/fastqs/{sample}.fq.gz",
         whitelist="workflow/data/{user}/{project}/{library}/outs/{sample}_whitelist_washed.txt"
     output:
         "workflow/data/{user}/{project}/{library}/outs/{sample}_extracted.fastq.gz"

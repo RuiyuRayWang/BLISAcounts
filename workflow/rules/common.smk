@@ -18,15 +18,17 @@ validate(samples, schema="../schemas/samples.schema.yaml")
 
 def get_demultiplex_inputs():
     if config['staggered']:
-        demultiplex_inputs = expand(
-            "workflow/data/{samples.user}/{samples.project}/{samples.library}/outs/{samples.sample}_staggered_multiplex",
-            samples = samples.itertuples()
-        )
+        demultiplex_inputs = "workflow/data/{user}/{project}/{library}/outs/{sample}_staggered_multiplex",
+        # demultiplex_inputs = expand(
+        #     "workflow/data/{samples.user}/{samples.project}/{samples.library}/outs/{samples.sample}_staggered_multiplex",
+        #     samples = samples.itertuples()
+        # )
     else:
-        demultiplex_inputs = expand(
-            "workflow/data/{samples.user}/{samples.project}/{samples.library}/outs/{samples.sample}_multiplex",
-            samples = samples.itertuples()
-        )
+        demultiplex_inputs = "workflow/data/{user}/{project}/{library}/outs/{sample}_multiplex",
+        # demultiplex_inputs = expand(
+        #     "workflow/data/{samples.user}/{samples.project}/{samples.library}/outs/{samples.sample}_multiplex",
+        #     samples = samples.itertuples()
+        # )
     return demultiplex_inputs
 
 def get_final_outputs():
