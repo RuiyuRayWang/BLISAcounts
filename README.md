@@ -27,7 +27,7 @@ Install the following prerequisites:
 
 Install environment dependencies:
 ```
-$ mamba env create -n BLISAcounts -f workflow/env/curated.yml
+$ mamba env create -n BLISAcounts -f workflow/envs/curated.yml
 ```
 
 ```
