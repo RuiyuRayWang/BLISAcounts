@@ -34,7 +34,7 @@ In `config/config.yaml`, specify `sample` slot with sample metadata (e.g. `confi
 and `plate` slot with antibody (e.g. `workflow/data/Zhong/HBV_example/AR005/metadata/ab_bc_ground_truth.csv`) and well (e.g. `workflow/data/Zhong/HBV_example/AR005/metadata/well_bc_ground_truth.csv`) ground truth metadta.
 
 
-To give a concrete example, two toy data are provided to demonstrate the usage of BLISAcounts.
+To give a concrete example, two toy data are provided.
 
 Please download the example data from the following link and put them under the BLISAcounts directory:
 https://www.dropbox.com/scl/fo/pjsn5v20vqhsnw4m3pig1/h?rlkey=z51en6cp5w3ibwfzihpjkjtwk&dl=1
